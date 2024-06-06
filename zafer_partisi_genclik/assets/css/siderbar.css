@@ -1,0 +1,40 @@
+/* Navbar'ı ortalamak için gerekli stil */
+.navbar-wrapper {
+  display: flex;
+  justify-content: center; /* Yatayda ortalama */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Genişliği %100 yaparak ortalamayı kolaylaştır */
+}
+
+.nav-item {
+  margin: 0 10px; /* Menü öğeleri arasındaki boşluk */
+}
+
+/* Logoyu sağa kaydırmak için */
+.logo-img {
+  width: 100%;
+  height: 8rem;
+  margin-left: 20%; /* Logoyu sağa kaydırmak için sol tarafa %20 boşluk ekliyoruz */
+}
+
+/* Responsive için */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 100%;
+    height: 6rem; /* Küçük ekranlar için yüksekliği ayarlayabilirsiniz */
+    margin-left: 10%; /* Küçük ekranlar için sol tarafa %10 boşluk ekliyoruz */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    width: 100%;
+    height: 4rem; /* Daha küçük ekranlar için yüksekliği ayarlayabilirsiniz */
+    margin-left: 5%; /* Daha küçük ekranlar için sol tarafa %5 boşluk ekliyoruz */
+  }
+}
